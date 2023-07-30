@@ -1,5 +1,5 @@
-<h1 align="center" style="color:white; background-color:black">[PROJECT NAME]</h1>
-<h4 align="center">[insert *brief* project description]</h4>
+<h1 align="center" style="color:white; background-color:black">[Zoio]</h1>
+<h4 align="center">[Image transmission using FSK and SX1276 module.]</h4>
 
 <p align="center">
 	<a href="http://zenith.eesc.usp.br/">
