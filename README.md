@@ -40,7 +40,10 @@
 
 ## What am I looking at?
 
-[/images/board.jpg]
+<p align = "center">
+<img src="[https://github.com/zenitheesc/Alcantara_v.1.0/blob/experimental_realocate_components/Other_Files/Images/Diagram.png](https://github.com/zenitheesc/Zoio/blob/main/images/Board.jpg)"/>
+</p>
+
 
 That is exactly the purpose of this project, to show us what our stratospheric sensors see during flight.
 Jokes aside, this project was born to experiment with and learn about real-time image transmission processes.
