@@ -31,12 +31,6 @@
     </a>
 </p>
 
-<p align="center">
-    <a href="#environment-and-tools">Environment and Tools</a> •
-    <a href="#steps-to-run-and-debug">Steps to run and debug</a> •
-    <a href="#how-to-contribute">How to contribute?</a> •
-</p>
-
 <img title="The Zoio Board" alt="Alt text" src="/images/Board.jpg">
 
 ## What am I looking at?
