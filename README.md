@@ -40,6 +40,8 @@
 
 ## What am I looking at?
 
+[/images/board.jpg]
+
 That is exactly the purpose of this project, to show us what our stratospheric sensors see during flight.
 Jokes aside, this project was born to experiment with and learn about real-time image transmission processes.
 
