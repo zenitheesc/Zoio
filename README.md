@@ -37,16 +37,14 @@
     <a href="#how-to-contribute">How to contribute?</a> •
 </p>
 
+<img title="The Zoio Board" alt="Alt text" src="/images/Board.jpg">
 
 ## What am I looking at?
 
-<p align = "center">
-<img src="[https://github.com/zenitheesc/Zoio/blob/main/images/Board.jpg]"/>
-</p>
-
-
 That is exactly the purpose of this project, to show us what our stratospheric sensors see during flight.
 Jokes aside, this project was born to experiment with and learn about real-time image transmission processes.
+
+Zoio is a funny name for "eye" in portuguese, so that is how we named the project.
 
 It uses an ESP32 CAM board as a base, connected to a handmade breakout board that contains an SX1276 radio and an indicator LED. Everything was powered using an 18650 Li-ion battery with a 5V power converter from AliExpress. Pretty simple yet good enough.
 
