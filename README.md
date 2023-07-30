@@ -80,40 +80,46 @@ We actually tried testing it on a sonde flight, but in the hurry of tracking it,
 
 
 ## Some good pictures we took while testing :)
-
 <p align="center">
 <img title="We and new students at the USP Opportunity Fair" alt="Alt text" src="/images/good/2023-03-16_11h13m40s.jpg">
 We and new students at the USP Opportunity Fair
+<br>
 </p>
 
 <p align="center">
 <img title="Marcus and the Zenth logo" alt="Alt text" src="/images/good/2023-03-16_11h35m45s.jpg">
 Marcus and the Zenth logo
+<br>
 </p>
 
 <p align="center">
 <img title="The University of São Paulo decade Archs" alt="Alt text" src="/images/good/2023-03-16_11h57m34s.jpg">
 The University of São Paulo decade Archs
+<br>
 </p>
 
 <p align="center">
 <img title="Stairs" alt="Alt text" src="/images/good/2023-03-16_11h57m49s.jpg">
 Stairs
+<br>
 </p>
 
 <p align="center">
 <img title="The E1 admnistration building" alt="Alt text" src="/images/good/2023-03-16_11h57m20s.jpg">
 The E1 admnistration building
+<br>
 </p>
 
 <p align="center">
 <img title="The E1 garden and trees - crooked" alt="Alt text" src="/images/good/2023-03-16_12h01m21s.jpg">
 The E1 garden and trees - crooked
+<br>
 </p>
 
 <p align="center">
 <img title="Me" alt="Alt text" src="/images/good/2023-03-16_11h41m19s.jpg">
 Me
+<br>
 </p>
 
 
