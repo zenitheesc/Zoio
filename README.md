@@ -79,9 +79,32 @@ When we put the board and battery into the styrofoam balls used to launch things
 We actually tried testing it on a sonde flight, but in the hurry of tracking it, we forgot to actually use the receiving software, so our images were lost since we did not implement any SD Card functionality. And that takes us to another problem: the SD card. The SX1276 radio is using SPI, which interferes with the SD card pins, so unfortunately I could not get both things to work at the same time using the Arduino libraries.
 
 
+## Some good pictures we took while testing :)
+
+<img title="We and new students at the USP Opportunity Fair" alt="Alt text" src="/images/good/2023-03-16_11h13m40s.jpg">
+
+<img title="Marcus and the Zenth logo" alt="Alt text" src="/images/good/2023-03-16_11h35m45s.jpg">
+
+<img title="The University of São Paulo decade Archs" alt="Alt text" src="/images/good/2023-03-16_11h57m34s.jpg">
+
+<img title="Stairs" alt="Alt text" src="/images/good/2023-03-16_11h57m49s.jpg">
+
+<img title="The E1 admnistration building" alt="Alt text" src="/images/good/2023-03-16_11h57m20s.jpg">
+
+<img title="The E1 garden and trees - crooked" alt="Alt text" src="/images/good/2023-03-16_12h01m21s.jpg">
+
+<img title="Me" alt="Alt text" src="/images/good/2023-03-16_11h41m19s.jpg">
 
 
-## Some pictures we took when testing :)
+## Some damaged pictures we took while testing :(
+
+<img title="" alt="Alt text" src="/images/broken/2023-03-16_12h00m12s.jpg">
+
+<img title="" alt="Alt text" src="/images/broken/2023-03-16_12h00m17s.jpg">
+
+<img title="" alt="Alt text" src="/images/broken/2023-03-16_12h02m37s.jpg">
+
+
 
 
 <p align="center">
