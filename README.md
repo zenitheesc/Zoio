@@ -52,7 +52,7 @@ It uses an ESP32 CAM board as a base, connected to a handmade breakout board tha
 
 All done with the Arduino IDE v2.0.
 
-The code for the radio and FSK functions was also made by us because, at the time, no FSK-able libraries existed. It can be found [HERE](https://github.com/JulioCalandrin/SX127X-FSK-LoRa). The only changes made were altering the pin write and SPI functions to the Arduino ones.
+The code for the radio and FSK functions was also made by us because, at the time, no FSK-able libraries existed. It can be found here: [SX127X-FSK-LoRa](https://github.com/JulioCalandrin/SX127X-FSK-LoRa). The only changes made were altering the pin write and SPI functions to the Arduino ones.
 
 
 ## The transmitter:
@@ -63,7 +63,7 @@ All we did was send all of those bytes in 255-byte packets, without any encoding
 
 ## The receiver
 
-On the receiver side of things, a TTGO board was used for simplicity, simply receiving the packets, extracting the byte stream, and dumping it into the serial port once all packets were received in order to be processed by another piece of software that collects, saves, and displays the photos. Its repository is [HERE](https://github.com/zenitheesc/Zenith-Picture-Receiver/tree/main). If at least half of the total packets were successfully received, the receiver dumps the data anyway, in case the jpg is partially usable.
+On the receiver side of things, a TTGO board was used for simplicity, simply receiving the packets, extracting the byte stream, and dumping it into the serial port once all packets were received in order to be processed by another piece of software that collects, saves, and displays the photos. It's repository can be found here: [Zenith Picture Receiver](https://github.com/zenitheesc/Zenith-Picture-Receiver/tree/main). If at least half of the total packets were successfully received, the receiver dumps the data anyway, in case the jpg is partially usable.
 
 ## Benchmark
 
