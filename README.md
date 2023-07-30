@@ -81,9 +81,9 @@ We actually tried testing it on a sonde flight, but in the hurry of tracking it,
 
 ## Some good pictures we took while testing :)
 <p align="center">
-<img title="We and new students at the USP Opportunity Fair" alt="Alt text" src="/images/good/2023-03-16_11h13m40s.jpg">
+<img title="Us and new students at the USP Opportunity Fair" alt="Alt text" src="/images/good/2023-03-16_11h13m40s.jpg">
 <br>
-We and new students at the USP Opportunity Fair
+Us and new students at the USP Opportunity Fair
 <br>
 </p>
 
@@ -132,12 +132,18 @@ Me
 
 ## Some damaged pictures we took while testing :(
 
+
+<p align="center">
 <img title="" alt="Alt text" src="/images/broken/2023-03-16_12h00m12s.jpg">
+</p>
 
+<p align="center">
 <img title="" alt="Alt text" src="/images/broken/2023-03-16_12h00m17s.jpg">
+</p>
 
+<p align="center">
 <img title="" alt="Alt text" src="/images/broken/2023-03-16_12h02m37s.jpg">
-
+</p>
 
 
 
