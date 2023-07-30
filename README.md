@@ -41,7 +41,7 @@
 ## What am I looking at?
 
 <p align = "center">
-<img src="[https://github.com/zenitheesc/Alcantara_v.1.0/blob/experimental_realocate_components/Other_Files/Images/Diagram.png](https://github.com/zenitheesc/Zoio/blob/main/images/Board.jpg)"/>
+<img src="[https://github.com/zenitheesc/Zoio/blob/main/images/Board.jpg]"/>
 </p>
 
 
