@@ -1,13 +1,3 @@
-/* 
- * Software made to run in the TTGO TBeam boards, meant for tracking Zenith Aerospace Stratospheric sondes.
- *
- * This code was primarily made with caos and tears, during the 2022 Latin America Space Challenge, and then
- * gradually updated and improved. Many hands have typed lines in this crap, memorable mentions to Celente,
- * Matheus and Júlio. Hopefully this might be its last form.
- *
- * Júlio Calandrin - 22/11/2022 :)
- */
-
 // ----------------- User Parameters ----------------- //
 
 #define SERIAL_BAUD_RATE 115200
@@ -24,25 +14,6 @@
 
 
 // ----------------- Pinout ----------------- //
-
-// #define BUZZER 0
-// #define RED_LED 33
-// #define GREEN_LED 32
-// #define BLUE_LED 25
-// #define BUTTON 38
-
-// #define FLASH_SS 4
-// #define FLASH_MISO 14
-// #define FLASH_MOSI 2
-// #define FLASH_SCLK 13
-
-// #define RADIO_DIO0 26
-// #define RADIO_DIO1 39
-// #define RADIO_NRST 23
-// #define RADIO_SS 18
-// #define RADIO_MISO 19
-// #define RADIO_MOSI 27
-// #define RADIO_SCLK 5
 
 #define BUZZER 23
 #define RED_LED 13
@@ -172,8 +143,6 @@ void PrintPhoto(uint8_t *pPhoto, int bytesReceived) {
 
 void setup() {
 
-  //ImAliveBeeps();
-
   // ----- Serial port and Bluetooth Serial ----- //
   Serial.begin(SERIAL_BAUD_RATE);
 
@@ -224,8 +193,6 @@ void loop() {
 
   while (!DIO1_FLAG) {  // Waits for DIO0(LoRa)/DIO1(FSK) Notification
 
-// Depois que eu adicionei essa bosta ele acha que só recebe pacotes "Pela metade" se receber um pela metade uma vez
-// Júlio do futuro: essa frase acima não faz sentido, mas acho que entendi: Se ele receber um pacote pela metade, todos os posteriores acabam sendo "pela metade" também (?) - testar isso
     if ((millis() - previousPacketTimeStamp > 1000) && StartCollecting) {  // If there was a delay in between packets - Timeout
       if (packetsReceived >= (IncomingPacket.values.numIncomingPackets/2)) {  // If at least half the image has arrived - send it out anyway
 
@@ -255,8 +222,7 @@ void loop() {
   FSK_ReceivePacket(&SX127X, RxData, sizeof(RxData), &ReceivedDataSize, &CRCStatus);
   previousPacketTimeStamp = millis();
 
-  // Uncommenting this affects the performance - printfs are hard you know.
-  //Serial.printf("\nReceivedDataSize: %d\n", ReceivedDataSize);
+  //Serial.printf("\nReceivedDataSize: %d\n", ReceivedDataSize);  // Uncommenting this affects the performance - uart is slow you know.
 
   if (!StartCollecting) {  // Checks the header packet:
     memcpy(IncomingPacket.raw, RxData, sizeof(IncomingPacket));
@@ -264,8 +230,8 @@ void loop() {
     if (!strcmp(IncomingPacket.values.zenith, "ZENITH") && IncomingPacket.values.numIncomingPackets < MAX_PACKETS) {
       StartCollecting = true;
 
-      // Uncommenting this affects the performance - printfs are hard you know.
-      //Serial.printf("\nString: %s    Comprimento: %d\n", IncomingPacket.values.zenith, IncomingPacket.values.numIncomingPackets);
+      //Serial.printf("\nString: %s    Comprimento: %d\n", IncomingPacket.values.zenith, IncomingPacket.values.numIncomingPackets); // Uncommenting this affects the performance - uart is slow you know.
+
     }
 
   } else {  // Collects the photo packets

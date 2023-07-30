@@ -67,7 +67,6 @@ void camera_turn_off(){
 
 void camera_config() {
 
-  // source file in: C:\Users\julio\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.6\tools\sdk\esp32\include\esp32-camera\driver\include
   camera_config_t config;
   config.ledc_channel = LEDC_CHANNEL_0;
   config.ledc_timer = LEDC_TIMER_0;
@@ -101,7 +100,7 @@ void camera_config() {
     return;
   }
 
-  // If this is called after the radio has been configured it fucks things up, so do it before
+  // If this is called after the radio has been configured it screws things up, so do it before
   sensor_t *s = esp_camera_sensor_get();
 
   s->set_whitebal(s, 1);
@@ -124,19 +123,6 @@ int camera_work() {
   Serial.println("Captured image: \n");
   for (int i = 0; i < fb->len; i++) Serial.printf("%.2X ", *(fb->buf + i));
   Serial.println("");
-
-  // Serial.write(0xDE);
-  // Serial.write(0xAD);
-  // Serial.write(0xBE);
-  // Serial.write(0xEF);
-
-  // Serial.write(fb->buf, fb->len);
-  // Serial.flush();
-
-  // Serial.write(0xDE);
-  // Serial.write(0xAD);
-  // Serial.write(0xBE);
-  // Serial.write(0xEF);
 
   transmit_image(fb->buf, fb->len);
 
@@ -187,16 +173,12 @@ void transmit_image(uint8_t *pPhotoBytes, size_t inSize) {
       packetLength = inSize - bytesReadUntilNow;
     }
 
-    //Serial.printf("\nPacket: %d\n", packetCounter);
-    //for (int i = 0; i < packetLength; i++) Serial.printf("%.2X ", packet[i]);
-    //Serial.println("");
-
     FSK_BigTransmit(&SX127X, packet, packetLength);
     packetCounter++;
     delay(50);  // 30 was as quick as I could do it  // Give time for the receiver to think
 
     // Note: Ideally this would be a DIO0 hardware interrupt, but since the ESPCam is a piece of garbage
-    // with a screaming abssence of pins, this had to be done via software, by checking the FIFO empty flag. - Julio
+    // with a screaming abssence of pins, this had to be done via software, by checking the FIFO empty flag.
     //Serial.print("\nWaiting for packet transmission confirmation.");
     while (!FSK_CheckFIFOEmpty(&SX127X)) delay(1);
 
@@ -290,28 +272,19 @@ void setup() {
   pinMode(RADIO_NRST, OUTPUT);
 
   FSKConfig(&SX127X);
-
-  // Sanity check:
-  //uint8_t test[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-  //FSK_BigTransmit(&SX127X, test, 10);
-  //delay(200);
 }
 
 void loop() {
 
-  //camera_turn_on();
-  //camera_config();
-  // FSKConfig(&SX127X);
   camera_work();
-  //camera_turn_off();  
-
   delay(10000);
+
 }
 
 
 
 
-
+// From the camera driver - nice to have on hand :)
 // typedef enum {
 //     FRAMESIZE_96X96,    // 96x96
 //     FRAMESIZE_QQVGA,    // 160x120
